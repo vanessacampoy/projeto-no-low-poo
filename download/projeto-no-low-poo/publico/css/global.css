@@ -1,0 +1,245 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, ul, li, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Cores */
+:root {
+  --cor-principal: #fcbcb2;
+  --cor-amaro: #e1a39b;
+  --cor-secundaria: #31353d;
+  --cor-cinza: #717171;
+  --cor-cinza-claro: #F9F9F9;
+  --cor-branco: #ffffff;
+  --cor-preto: #000000;
+}
+
+.cor-principal {
+  color: var(--cor-principal);
+}
+
+.cor-amaro {
+  color: var(--cor-amaro);
+}
+
+.cor-secundaria {
+  color: var(--cor-secundaria);
+}
+
+.cor-cinza-claro {
+  color: var(--cor-cinza-claro);
+}
+.cor-cinza {
+  color: var(--cor-cinza);
+}
+
+.cor-branco {
+  color: var(--cor-branco);
+}
+
+.cor-preto {
+  color: var(--cor-preto);
+}
+
+
+/* Fontes */
+.font-p-1 {
+  font: 500 18px/1.5 "Raleway", sans-serif;
+}
+
+.font-p-2 {
+  font: 400 16px/1.35 "Raleway", sans-serif;
+}
+
+.font-p-3 {
+  font: 400 14px/1.2 "Raleway", sans-serif;
+}
+
+.font-p-4 {
+  font: 100 14px/1.2 "Roboto", sans-serif;
+}
+
+.font-x {
+  font: 400 16px/1.35 "Roboto", sans-serif;
+}
+
+.font-1 {
+  font: 700 24px/2 "Nanum Gothic", sans-serif;
+}
+
+.font-2 {
+  font: 400 22px/1.8 "Nanum Gothic", sans-serif;
+}
+
+.font-3 {
+  font: 400 18px/1.5 "Nanum Gothic", sans-serif;
+}
+
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo-h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font: 700 24px/1.5 "Nanum Gothic", sans-serif;
+}
+
+.titulo-h2 {
+  text-align: left;
+  margin: auto;
+  font: 400 22px/1.8 "Nanum Gothic", sans-serif;
+}
+
+.titulo-h3 {
+  text-align: left;
+  margin-left: 20px;
+  padding: 6px;
+  font: 500 16px/1.35 "Raleway", sans-serif;
+}
+
+.btn-textura {
+  background: var(--cor-principal);
+  padding: 12px;
+  border: 1px solid var(--cor-principal);
+  width: 220px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-textura:hover {
+  background: var(--cor-amaro);
+  color: var(--cor-branco);
+  padding: 12px;
+  border: 1px solid var(--cor-amaro);
+  width: 220px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.btn-consultoras {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 12px;
+  color: var(--cor-cinza-claro);
+  background-color: var(--cor-secundaria);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-consultoras:hover {
+  background-color: var(--cor-principal);
+  transition: 0.2s ease-in;
+}
+
+
+.btn-modal {
+  background: var(--cor-principal); 
+  padding: 16px;
+  border: 1px solid var(--cor-principal);
+  width: 160px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.btn-modal:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-cinza-claro);
+  padding: 16px;
+  border: 1px solid var(--cor-secundaria);
+  width: 160px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+} 
+
+.btn-leiamais {
+  background-color: var(--cor-cinza-claro);
+  color: var(--cor-cinza);
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-leiamais:hover {
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  padding: 3px 6px;
+  transition: 0.2s ease-in;
+}
+
+/*Botão subir*/
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 500px;
+  right: 30px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  background-color: var(--cor-secundaria);
+  box-shadow: rgba(237, 240, 242, 0.2) 0px 8px 14px;
+  color: var(--cor-branco);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30%;
+  font: 100 14px/1.2 "Roboto", sans-serif;
+}
+
+#myBtn:hover {
+  background-color: var(--cor-principal);
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 800px) {
+  #myBtn {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  #myBtn {
+    padding: 8px;
+    font-size: 8px;
+  }
+}
+

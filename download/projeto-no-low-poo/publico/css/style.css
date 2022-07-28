@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Raleway:ital,wght@0,400;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Raleway:ital,wght@0,400;0,500;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Raleway:ital,wght@0,400;0,500;1,300&family=Roboto:wght@100;400&display=swap');
+
+
+@import"./global.css";
+@import'./header.css';
+@import'./tecnicas.css';
+@import'./texturas.css';
+@import'./footer.css';
+@import'./produtos.css';
+@import'./clientes.css';
+@import'./sobre.css';
+@import'./perguntas.css';
+@import'./form.css';
+@import'./fonts.css';
